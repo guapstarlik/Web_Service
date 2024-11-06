@@ -1,10 +1,14 @@
-// Import the express library and assign it to a variable
-import express from 'express'
 
-// Create an instance of an express application 
+import express from 'express'
+import fetch from 'node-fetch'
+import cors from 'cors'
+
 const app = express()
 
-// Set the port the application will be running on
+app.use(cors({
+    origin: '*'
+}));
+
 const port = process.env.PORT || 3001
 
 //  media data
@@ -45,7 +49,7 @@ const mediaItems = [
 
 // Root path
 app.get('/', (req, res) => {
-    res.send("Media is every consuming, but what are you partaking in")
+    res.send("Media is ever consuming, but what are you partaking in")
 })
 
 // Route parameter for getting media by ID
