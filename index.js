@@ -45,7 +45,7 @@ const mediaItems = [
 
 // Root path
 app.get('/', (req, res) => {
-    res.send("Write an instruction for a drawing here. For example: draw a line across the page, draw 10 circles of different sizes, draw a duck.")
+    res.send("Media is every consuming, but what are you partaking in")
 })
 
 // Route parameter for getting media by ID
