@@ -7,15 +7,15 @@ const app = express()
 // Set the port the application will be running on
 const port = process.env.PORT || 3001
 
-// Sample media data
+//  media data
 const mediaItems = [
     {
         id: 1,
         name: "Star Wars: The Clone Wars",
         category: "show",
-        description: "Set in the Star Wars universe between Episode II and III",
+        description: "Animated show in the Star Wars universe, placed before episode 2 and 3",
         releaseYear: 2008,
-        seasons: 7
+        episodes: 133
     },
     {
         id: 2,
@@ -29,7 +29,7 @@ const mediaItems = [
         id: 3,
         name: "One Piece",
         category: "anime",
-        description: "Follow Monkey D. Luffy and his pirate crew in their search for the ultimate treasure",
+        description: "Monkey D Luffy travels the sea for the One Piece",
         releaseYear: 1999,
         episodes: 1000
     },
@@ -37,7 +37,7 @@ const mediaItems = [
         id: 4,
         name: "Ready Player One",
         category: "movie",
-        description: "Virtual reality adventure based on Ernest Cline's novel",
+        description: "Virtual Reality adventure with dystopian undertones",
         releaseYear: 2018,
         runtime: "140 minutes"
     }
