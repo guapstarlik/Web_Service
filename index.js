@@ -11,6 +11,9 @@ app.use(cors({
 
 const port = process.env.PORT || 3001
 
+app.use(express.json()) // enables the Express application to parse incoming JSON data from the request body. without this, the req.body object will be undefined
+app.use(express.static('public')) // serves static files from the specified directory (in this case, the public folder).
+
 //  media data
 const mediaItems = [
     {
